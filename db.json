@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "products 1",
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "title": "products 2",
+            "price": 1000
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "rating": 3,
+            "productId ":1
+        },
+
+        {
+            "id": 2,
+            "rating":4,  
+            "productId ":2
+
+        }
+    ]
+}

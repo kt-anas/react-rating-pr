@@ -1,16 +1,17 @@
 import { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext(null);
-
+ 
 
 export default function Usecon() {
-  const [name, setName] = useState('Anas');
+  const [name] = useState('Anas');
+  localStorage.setItem("Hello","nothing")
   return (
     <ThemeContext.Provider value={name}>
       <Form />  
       <Button/>
       <Panel/>
-      <Button/>
+      <Button/> 
     </ThemeContext.Provider>
   )
 }
@@ -25,10 +26,7 @@ function Form() {
 function Panel() {
   const name = useContext(ThemeContext);
    return (
-     
-      <h1>{name}</h1>
-          
-    
+      <h1>{name}</h1> 
   )
 }
 function Button() {

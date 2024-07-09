@@ -25,11 +25,12 @@ function Rating() {
                     className='div' 
                     style={{ background: rated ? 'red' : 'grey' }}
                     onClick={() => dispatch({ type: 'RATE', index })}
-                >H</div>
+                ></div>
                 
                  
             ))}
         </div>
+        
     );
 }
 
